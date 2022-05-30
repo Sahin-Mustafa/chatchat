@@ -6,7 +6,6 @@ import FLoatingButton from '../components/FloatingButton/FloatingButton';
 import RoomCard from '../components/roomsCard/RoomsCard';
 import ContentImputModal from '../components/ContentInmputModal/ContentInmputModal';
 import parseContentData from '../utils/parseContentData';
-import uuid from 'react-native-uuid';
 
 const Login = ({navigation}) => {
   const [loading, setLoading] = React.useState(true);

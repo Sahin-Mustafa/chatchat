@@ -23,12 +23,9 @@ const Login = ({navigation}) => {
     });
   }, []);
 
-  async function onHandleFormLogin(formikValues) {
+  async function onHandleFormLogin(values) {
     try {
-      await auth().signInWithEmailAndPassword(
-        formikValues.usermail,
-        formikValues.password,
-      );
+      await auth().signInWithEmailAndPassword(values.usermail, values.password);
       navigation.navigate('RoomPage');
     } catch (error) {
       showMessage({
