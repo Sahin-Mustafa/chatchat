@@ -19,7 +19,7 @@ const Login = ({navigation}) => {
   React.useEffect(() => {
     GoogleSignin.configure({
       webClientId:
-        '477327638699-08drje7r5jgfks2nta0troba3q2882m9.apps.googleusercontent.com',
+        'your web client ID.apps.googleusercontent.com',
     });
   }, []);
 
